@@ -3312,7 +3312,7 @@ class Deviant(Coin):
     NET = "mainnet"
     XPUB_VERBYTES = bytes.fromhex("044d5066")
     XPRV_VERBYTES = bytes.fromhex("0441514b")
-    GENESIS_HASH = ('00000e697a1e963f6ae8288419ffb0d59de9d232bac8efda8c6491d1c31e3139')
+    GENESIS_HASH = ('46ef6862b7bc094822eb7b5f4e47a0276baeb7599a284bc4182ad3a163b53c4a')
     P2PKH_VERBYTE = bytes.fromhex("5a")
     P2SH_VERBYTES = [bytes.fromhex("0a")]
     WIF_BYTE = bytes.fromhex("89")
