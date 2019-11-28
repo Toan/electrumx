@@ -3324,7 +3324,7 @@ class Deviant(Coin):
     SESSIONCLS = DashElectrumX
     DAEMON = daemon.DashDaemon
     ZEROCOIN_HEADER = 112
-    ZEROCOIN_START_HEIGHT = 863787
+    ZEROCOIN_START_HEIGHT = 501
     ZEROCOIN_BLOCK_VERSION = 4
 
     @classmethod
