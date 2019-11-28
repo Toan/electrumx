@@ -3323,6 +3323,9 @@ class Deviant(Coin):
     RPC_PORT = 8332
     SESSIONCLS = DashElectrumX
     DAEMON = daemon.DashDaemon
+    ZEROCOIN_HEADER = 112
+    ZEROCOIN_START_HEIGHT = 863787
+    ZEROCOIN_BLOCK_VERSION = 4
 
     @classmethod
     def static_header_len(cls, height):
