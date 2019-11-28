@@ -3306,6 +3306,7 @@ class GravityZeroCoin(ScryptMixin, Coin):
     ESTIMATE_FEE = 0.01
     RELAY_FEE = 0.01
 
+    #DEV
 class Deviant(Coin):
     NAME = "Deviant"
     SHORTNAME = "DEV"
