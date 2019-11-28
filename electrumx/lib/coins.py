@@ -3305,3 +3305,27 @@ class GravityZeroCoin(ScryptMixin, Coin):
     RPC_PORT = 36442
     ESTIMATE_FEE = 0.01
     RELAY_FEE = 0.01
+
+class Deviant(Coin):
+    NAME = "Deviant"
+    SHORTNAME = "DEV"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("044d5066")
+    XPRV_VERBYTES = bytes.fromhex("0441514b")
+    GENESIS_HASH = ('00000e697a1e963f6ae8288419ffb0d5'
+                    '9de9d232bac8efda8c6491d1c31e3139')
+    P2PKH_VERBYTE = bytes.fromhex("5a")
+    P2SH_VERBYTES = [bytes.fromhex("0a")]
+    WIF_BYTE = bytes.fromhex("89")
+    TX_COUNT_HEIGHT = 569399
+    TX_COUNT = 2157510
+    TX_PER_BLOCK = 3
+    RPC_PORT = 8332
+    SESSIONCLS = DashElectrumX
+    DAEMON = daemon.DashDaemon
+
+    @classmethod
+    def header_hash(cls, header):
+        '''Given a header return the hash.'''
+        import quark_hash
+        return quark_hash.getPoWHash(header)
