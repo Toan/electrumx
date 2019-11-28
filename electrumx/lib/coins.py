@@ -3315,17 +3315,16 @@ class Deviant(Coin):
     GENESIS_HASH = ('00000e697a1e963f6ae8288419ffb0d5'
                     '9de9d232bac8efda8c6491d1c31e3139')
     P2PKH_VERBYTE = bytes.fromhex("5a")
-    P2SH_VERBYTES = [bytes.fromhex("0a")]
+    P2SH_VERBYTES = [bytes.fromhex("a")]
     WIF_BYTE = bytes.fromhex("89")
     TX_COUNT_HEIGHT = 569399
     TX_COUNT = 2157510
     TX_PER_BLOCK = 3
     RPC_PORT = 8332
-    SESSIONCLS = DashElectrumX
-    DAEMON = daemon.DashDaemon
     ZEROCOIN_HEADER = 112
     ZEROCOIN_START_HEIGHT = 501
     ZEROCOIN_BLOCK_VERSION = 4
+    STATIC_BLOCK_HEADERS = False
 
     @classmethod
     def static_header_len(cls, height):
